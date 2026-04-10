@@ -36,10 +36,9 @@ function QuestionComponent() {
           <p>Status: {question.status}</p>
         </div>
       ))}
-      {/* TODO: Replace this placeholder with your question set UI */}
+  
     
 
-      {/* TODO: Render fetched data or form elements as required */}
     </div>
   );
 }
