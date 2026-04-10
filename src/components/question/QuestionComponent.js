@@ -12,7 +12,7 @@ function QuestionComponent() {
 
   // TODO: Implement data fetching inside a useEffect hook
   useEffect(() => {
-    fetch('https://bvrithcloud.com/api/questions',{
+    fetch('/api/questions',{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ function QuestionComponent() {
   return (
     <div>
       <h2>Questions</h2>
-      {questions.map((question) => (
+          {questions.map((question) => (
         <div key={question.id}>
           <h3>{question.title}</h3>
           <p>{question.description}</p>
@@ -37,7 +37,7 @@ function QuestionComponent() {
         </div>
       ))}
       {/* TODO: Replace this placeholder with your question set UI */}
-      <p>QuestionComponent placeholder — implement your assigned question set here.</p>
+    
 
       {/* TODO: Render fetched data or form elements as required */}
     </div>
